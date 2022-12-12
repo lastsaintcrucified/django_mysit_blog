@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Blog{% endblock %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock  %}
+
+
+{% block content %}
+<header id="main-navigation">
+  <h1><a href="">Towhid's Blog</a></h1>
+  <nav>
+    <a href="">All Posts</a>
+  </nav>
+</header>
+
+<section id="welcome">
+  <header>
+    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Towhid's Blog" />
+    <h2>TOWHID"S BLOG</h2>
+  </header>
+  <p>Hi, I am Towhid. I love to blog and share my thought to the world</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My latest posts</h2>
+  <ul>
+    <li>
+      <article class="post">
+        <a href="">
+          <img src="{% static 'blog/images/mountains.jpg' %}" alt="mountain hiking" />
+          <div class="post_content">
+            <h3>Mountain Hiking</h3>
+            <p>
+              Lorem Ipsum Dolor Amet.Lorem Ipsum Dolor AmetLorem Ipsum Dolor
+              AmetLorem Ipsum Dolor AmetLorem Ipsum Dolor Amet
+            </p>
+          </div>
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+<section id="about">
+  <h2>What I do</h2>
+  <p>
+    Lorem Ipsum Dolor Amet.Lorem Ipsum Dolor AmetLorem Ipsum Dolor AmetLorem
+    Ipsum Dolor AmetLorem Ipsum Dolor Amet
+  </p>
+  <p>
+    Lorem Ipsum Dolor Amet.Lorem Ipsum Dolor AmetLorem Ipsum Dolor AmetLorem
+    Ipsum Dolor AmetLorem Ipsum Dolor Amet
+  </p>
+</section>
+{% endblock %}
