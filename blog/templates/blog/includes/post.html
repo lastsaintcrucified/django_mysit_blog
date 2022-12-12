@@ -1,0 +1,15 @@
+{% load static %}
+<li>
+    <article class="post">
+      <a href="{% url 'post-details-page' 'the-mountains'%}">
+        <img src="{% static 'blog/images/mountains.jpg' %}" alt="mountain hiking" />
+        <div class="post_content">
+          <h3>Mountain Hiking</h3>
+          <p>
+            Lorem Ipsum Dolor Amet.Lorem Ipsum Dolor AmetLorem Ipsum Dolor
+            AmetLorem Ipsum Dolor AmetLorem Ipsum Dolor Amet
+          </p>
+        </div>
+      </a>
+    </article>
+  </li>

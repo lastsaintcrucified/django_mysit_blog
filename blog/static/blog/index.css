@@ -68,21 +68,6 @@
   flex: 1;
 }
 
-.post a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.post a:hover {
-  background: linear-gradient(to right top, #6305dd, #390281);
-  color: white;
-}
-
 #about {
   text-align: center;
   padding: 3rem;
